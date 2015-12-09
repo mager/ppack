@@ -1,0 +1,30 @@
+.jumbotron {
+  border-bottom: 10px solid #E80079;
+  padding-bottom: 40px;
+  background-color: #fff;
+  .container {
+    background-image: url('/images/ppack-400.png');
+    background-position: right center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+  }
+  p {
+    color: #000;
+    margin: 20px 0;
+    text-align: left;
+    font-size: 24pt;
+  }
+  h1 {
+    .logo {
+      display: block;
+      width: 374px;
+      height: 259px;
+      background: no-repeat url('/images/logo.png');
+      text-indent: -9999em;
+    }
+  }
+}
+
+.navbar + .jumbotron {
+  margin-top: -40px;
+}
