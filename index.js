@@ -1,9 +1,15 @@
 var express = require('express');
 var app = express();
+var bodyParser = require('body-parser')
 
 app.set('port', (process.env.PORT || 5000));
 
 app.use(express.static(__dirname + '/public'));
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({
+  extended: true
+}));
 
 // views is directory for all template files
 app.set('views', __dirname + '/views');
@@ -14,7 +20,7 @@ app.get('/', function(request, response) {
 });
 
 app.post('/email', function(request, response) {
-  console.log('hello');
+  console.log(request.body);
 });
 
 app.listen(app.get('port'), function() {
