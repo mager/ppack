@@ -2,7 +2,7 @@ $(function() {
   console.log('page ready, jquery worked');
 
   $('button').click(function(e){
-    console.log('button clicked');
+    $('button').replaceWith("<p>Thanks for your interest, we'll get back to you soon!");
   });
 
   $(document).on('submit', 'form', function(e) {
