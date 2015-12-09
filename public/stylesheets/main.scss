@@ -1,7 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:700|Cabin);
+
+body {
+  font-family: Cabin;
+  font-weight: 400;
+  color: #190426;
+}
+
 .jumbotron {
   border-bottom: 10px solid #E80079;
   padding-bottom: 40px;
   background-color: #fff;
+  margin-bottom: 0;
   .container {
     background-image: url('/images/ppack-400.png');
     background-position: right center;
@@ -9,10 +18,10 @@
     background-repeat: no-repeat;
   }
   p {
-    color: #000;
     margin: 20px 0;
     text-align: left;
     font-size: 24pt;
+    font-family: "Helvetica Neue", Helvetica, Arial;
   }
   h1 {
     .logo {
@@ -27,4 +36,31 @@
 
 .navbar + .jumbotron {
   margin-top: -40px;
+}
+
+#about {
+  background: #FAE3F0;
+  padding: 40px 0;
+  h2 {
+    font-family: "Playfair Display";
+    font-weight: 700;
+    font-size: 48pt;
+    text-align: center;
+    margin: 0 0 25px;
+  }
+  p {
+    font-size: 14pt;
+    margin: 0 0 20px;
+  }
+  .pix {
+    float:right;
+    margin: 0 0 0 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    img {
+      max-width: 200px;
+      margin: 0 0 20px;
+    }
+  }
 }
